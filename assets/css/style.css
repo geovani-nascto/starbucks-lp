@@ -9,13 +9,12 @@
 }
 
 header .line{
-    border: 10px solid #117050;
+    border: 5px solid #117050;
 }
 
 .container{
     max-width: 1100px;
     margin: auto;
-    background-color: antiquewhite;
 }
 
 .header--area{
@@ -29,9 +28,65 @@ header .line{
     width: 64px;
 }
 
-.header--right form input{
+.header--right{
+    display: flex;
+    align-items: center;
+}
+
+.header--form form{
+    display: flex;
+}
+
+.header--form form input{
     font-size: 16px;
-    padding: 7px 10px;
+    padding: 7px 15px;
     outline: 0;
     border: 1px solid #aaa;
+    max-width: 250px;
+    width: 100%;
+}
+
+.header--form form button{
+    background: transparent;
+    border: 0;
+    margin-left: -30px;
+    cursor: pointer;
+}
+
+.header--form form button img{
+    width: 16px;
+}
+
+.header--right .header--menu{
+    margin-left: 50px;
+}
+
+.header--right .header--menu img{
+    width: 24px;
+}
+
+.banner{
+    background-image: url(../img/bg.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 100px 0;
+}
+
+.banner h1{
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    font-size: 95px;
+    line-height: 110px;
+    margin-bottom: 35px;
+}
+
+.banner .banner--drinks{
+    margin-top: 60px;
+}
+
+.banner .banner--drinks img{
+    width: 160px;
+    border: 6px solid #117050;
+    border-radius: 50%;
+    margin-right: 35px;
 }
