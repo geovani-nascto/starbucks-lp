@@ -29,6 +29,14 @@
     background-color: #006341;
 }
 
+h2{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+    font-size: 35px;
+    line-height: 45px;
+    margin: 8px 0 20px;
+}
+
 /*Header*/
 
 header .line{
@@ -96,7 +104,7 @@ header .line{
     padding: 95px 0;
 }
 
-.banner h1{
+h1{
     font-family: 'Oswald', sans-serif;
     font-weight: bold;
     font-size: 95px;
@@ -124,14 +132,6 @@ header .line{
 
 .area1--content{
     padding: 60px 100px;
-}
-
-.area1--content h2{
-    font-family: 'Oswald', sans-serif;
-    font-weight: 600;
-    font-size: 35px;
-    line-height: 45px;
-    margin: 8px 0 20px;
 }
 
 .area1--content p.area1--quote{
@@ -167,14 +167,6 @@ header .line{
 
 .area2--content{
     padding: 60px 130px;
-}
-
-.area2--content h2{
-    font-family: 'Oswald', sans-serif;
-    font-weight: 600;
-    font-size: 35px;
-    line-height: 45px;
-    margin: 8px 0 20px;
 }
 
 .area2--content p.area2--quote{
@@ -215,14 +207,6 @@ header .line{
     background-position: left;
 }
 
-.area3--content h2{
-    font-family: 'Oswald', sans-serif;
-    font-weight: 600;
-    font-size: 35px;
-    line-height: 45px;
-    margin: 8px 0 20px;
-}
-
 .area3--content p.area3--text{
     line-height: 25px;
     margin-bottom: 45px;
@@ -244,14 +228,6 @@ header .line{
 .area4--content{
     padding: 150px 0px 150px 130px;
     background-color: #e8e9ee;
-}
-
-.area4--content h2{
-    font-family: 'Oswald', sans-serif;
-    font-weight: 600;
-    font-size: 35px;
-    line-height: 45px;
-    margin: 8px 0 20px;
 }
 
 .area4--content p.area4--text{
@@ -327,7 +303,7 @@ i:hover{
     }
 }
 
-@media (min-width: 0px) and (max-width: 768px){
+@media (min-width: 426px) and (max-width: 768px){
     .container{
         padding: 0 40px;
     }
@@ -343,5 +319,52 @@ i:hover{
 
     .area2{
         grid-template-columns: 2fr 3fr;
+    }
+}
+
+@media (max-width: 425px){
+    .container{
+        padding: 0 20px;
+    }
+
+    .header--form form input{
+        max-width: 150px;
+    }
+
+    .header--right .header--menu{
+        margin-left: 20px;
+    }
+
+    h1{
+        font-size: 60px;
+        line-height: 65px;
+    }
+
+    h2{
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    .banner .banner--drinks img {
+        width: 80px;
+        border: 3px solid #117050;
+        border-radius: 50%;
+        margin-right: 10px;
+    }
+
+    .area1, .area2, .area3, .area4{
+        grid-template-columns: 1fr;
+    }
+
+    .area1--content, .area2--content, .area3--content, .area4--content{
+        padding: 40px;
+    }
+
+    .area5{
+        height: 300px;
+    }
+
+    footer{
+        padding: 30px 40px;
     }
 }
