@@ -23,6 +23,12 @@
     color: #fff;
 }
 
+.bar{
+    width: 168px;
+    height: 22px;
+    background-color: #006341;
+}
+
 /*Header*/
 
 header .line{
@@ -120,12 +126,6 @@ header .line{
     padding: 60px 100px;
 }
 
-.area1--content .bar{
-    width: 168px;
-    height: 22px;
-    background-color: #006341;
-}
-
 .area1--content h2{
     font-family: 'Oswald', sans-serif;
     font-weight: 600;
@@ -167,12 +167,6 @@ header .line{
 
 .area2--content{
     padding: 60px 130px;
-}
-
-.area2--content .bar{
-    width: 168px;
-    height: 22px;
-    background-color: #006341;
 }
 
 .area2--content h2{
@@ -238,4 +232,116 @@ header .line{
     background-image: url(../img/f5.jpg);
     background-position: center;
     background-size: cover;
+}
+
+/*Area 4*/
+
+.area4{
+    display: grid;
+    grid-template-columns: 500px 1fr;
+}
+
+.area4--content{
+    padding: 150px 0px 150px 130px;
+    background-color: #e8e9ee;
+}
+
+.area4--content h2{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+    font-size: 35px;
+    line-height: 45px;
+    margin: 8px 0 20px;
+}
+
+.area4--content p.area4--text{
+    line-height: 25px;
+    margin-bottom: 45px;
+}
+
+.area4--img1{
+    background-image: url(../img/bg3.jpg);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*Area 5*/
+
+.area5{
+    background-image: url(../img/bg4.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 900px;
+}
+
+/*Footer*/
+
+footer{
+    background-color: #333;
+    padding: 60px 130px;
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+}
+
+.footer--top{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+i{
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+i:hover{
+    transform: scale(1.2);
+    color: #ddd;
+}
+
+.footer--bottom{
+    color: #aaa;
+    border-top: 1px solid #aaa;
+    padding-top: 15px;
+
+}
+
+.footer--bottom a{
+    color: #ccc;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.footer--bottom a:hover{
+    color: #eee;
+}
+
+@media (min-width: 769px) and (max-width: 1024px){
+    .container{
+        padding: 0 40px;
+    }
+}
+
+@media (min-width: 0px) and (max-width: 768px){
+    .container{
+        padding: 0 40px;
+    }
+
+    .area1--content, .area2--content, .area3--content{
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+
+    .area1, .area3{
+        grid-template-columns: 3fr 2fr;
+    }
+
+    .area2{
+        grid-template-columns: 2fr 3fr;
+    }
 }
